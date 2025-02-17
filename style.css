@@ -1,0 +1,231 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f8f8ff;/* Page background */
+  display: grid;
+  place-items: center;
+}
+
+#header{
+  background-color:#f8f8ff;
+  width: 1110px;
+}
+
+#header img {
+  padding-top: 16px;
+  padding-right: 20px;
+  float: right;
+  z-index: -1;
+}
+
+/* Custom arrow for the select */
+.city-select {
+  width: 300px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.menu {
+  background-color: rgba(0,0,0,0.0);
+  padding: 16px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+/* Style for the options */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  font-size: 30px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+/* 下拉链接 */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* 悬停时更改下拉链接的颜色 */
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+/* 悬停时显示下拉菜单 */
+.city-select:hover .dropdown-content {
+  display: block;
+}
+
+/* 显示下拉内容时，更改下拉按钮的背景颜色 */
+.dropdown:hover .menu {
+  background-color: #3e8e41;
+}
+
+
+/* Select bar styling */
+#main{
+  background-image: url("../images/Melbourn_city1.png");
+  width: 1110px;
+  height: 500px;
+}
+
+#main #curent-temperature {
+  padding-left: 100px;
+  padding-top: 100px;
+  float:left;
+  text-align: right;
+}
+
+#main #ct {
+  font-size: 60px;
+} 
+
+#main #ht {
+  font-size: 30px;
+} 
+
+#main #lt {
+  font-size: 30px;
+} 
+
+/* pic for dress */
+#main #dress_pic img{
+  padding-right: 100px;
+  padding-top: 20px;
+  float: right;
+}
+
+/* pic for weather */
+#main #weather_pic img{
+  padding-right: 80px;
+  float: right;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* weather fly animation*/
+.comet {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    border-radius: 50%;
+    animation: cometFly 5s linear; /* Animation duration and movement */
+}
+
+/* Comet Animation */
+
+@keyframes cometFly {
+    from {
+        transform: translate(-50%, -50%) translate(-100vw, -100vh); /* Starts off-screen */
+        opacity: 1; /* Fully visible at the start */
+    }
+    to {
+        transform: translate(-50%, -50%) translate(100vw, 100vh); /* Moves off the opposite corner */
+        opacity: 0; /* Fades out as it moves */
+    }
+}
+
+@keyframes example {
+  0%   {right:0px; top:0px;}
+  50%  {right:200px; top:0px;}
+  100% {right:0px; top:0px;}
+}
+
+/* Navigator options */
+#day-weather ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #80C7CE;
+}
+
+#day-weather li {
+  display: inline;
+  float: left;
+  width: 25%;
+}
+
+#day-weather li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+#day-weather li a:hover,
+#day-weather li a.active {
+  background-color: #111;
+}
+
+/* Hours weather*/
+.hours-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto; /* Allows horizontal scrolling */
+  padding: 20px;
+  background-color: #F2EFE7;
+  width: 100%;
+}
+
+/* Individual Hour Cards */
+.hour-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+  height: 120px;
+  background-color: #5f9ea0; /* Teal background */
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  margin: auto;
+}
+
+/* Time Styling */
+.hour-card .time {
+  font-size: 20px;
+  color: black;
+  padding-top:8px;
+}
+
+/* Weather Icon */
+.hour-card .weather-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+/* Temperature Styling */
+.hour-card .temperature {
+  font-size: 16px;
+  color: black;
+  padding-bottom: 8px;
+}
+
+#footer{
+  background-color: #2973B2;
+  text-align: center;
+  font-size:  10px;
+  color:#000;
+  width: 1110px;
+  padding: 10px;
+}

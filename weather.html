@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DressForecast</title>
+  <link rel="stylesheet" href="static/style.css" />
+</head>
+
+<body>
+	<div id="header">
+		<div class="city-select">
+			<div class="menu">city-select</div>
+			<div class="dropdown-content">
+				<a href="">Sydney</a>
+				<a href="">Melbourn</a>
+				<a href="">Cairns</a>
+				<a href="">Adelaide</a>
+				<a href="">Darwin</a>
+				<a href="">Brisbane</a>
+				<a href="">Canberra</a>
+				<a href="">Gold Coast</a>
+			</div>
+		</div>
+		<img src="images/logo.png" alt="logo" id="logo">
+	</div>
+
+	<div id="main">
+    	<div id="curent-temperature">
+    		<div id="ct">18°C</div>
+    		<div id="ht">H:25°C</div>
+    		<div id="lt">L:30°C</div>
+   		</div>
+		<div id="weather_pic"> <img src="images/sun.png"></div>
+    	<div id="dress_pic"> <img src="images/man.webp"></div>
+	</div>
+
+	<div id="day-weather">
+		<ul>
+			<li><a href="#date">Feb 7</a></li>
+			<li><a href="#date">Feb 8</a></li>
+			<li><a href="#date">Feb 9</a></li>
+			<li><a href="#date">Feb 10</a></li>
+  		</ul>
+		<div class="hours-container">
+ 			<div class="hour-card" id="h1">
+   				<div class="time">12AM</div>
+   				<img src="images/sun.png" alt="Weather Icon" class="weather-icon">
+				<div class="temperature">15°C</div>
+  			</div>
+  		
+  			<div class="hour-card" id="h2">
+    			<div class="time">1AM</div>
+    			<img src="images/cloud.png" alt="Weather Icon" class="weather-icon">
+    			<div class="temperature">15°C</div>
+  			</div>
+  		
+			<div class="hour-card" id="h3">
+    			<div class="time">2AM</div>
+    			<img src="images/cloud-sun.png" alt="Weather Icon" class="weather-icon">
+    			<div class="temperature">15°C</div>
+ 			</div>
+ 		
+  			<div class="hour-card" id="h4">
+    			<div class="time">3AM</div>
+    			<img src="images/cloud.png" alt="Weather Icon" class="weather-icon">
+    			<div class="temperature">15°C</div>
+  			</div>
+  		
+  			<div class="hour-card" id="h5">
+				<div class="time">4AM</div>
+				<img src="images/cloud.png" alt="Weather Icon" class="weather-icon">
+				<div class="temperature">15°C</div>
+			</div>
+		
+			<div class="hour-card" id="h6">
+				<div class="time">5AM</div>
+    			<img src="images/cloud.png" alt="Weather Icon" class="weather-icon">
+				<div class="temperature">15°C</div>
+			</div>
+		
+			<div class="hour-card" id="h7">
+				<div class="time">6AM</div>
+    			<img src="images/cloud.png" alt="Weather Icon" class="weather-icon">
+				<div class="temperature">15°C</div>
+			</div>
+		
+			<div class="hour-card" id="h8">
+    			<div class="time">7AM</div>
+    			<img src="images/cloud.png" alt="Weather Icon" class="weather-icon">
+    			<div class="temperature">15°C</div>
+			</div>
+		
+			<div class="hour-card" id="h9">
+				<div class="time">8AM</div>
+    			<img src="images/cloud.png" alt="Weather Icon" class="weather-icon">
+				<div class="temperature">19°C</div>
+			</div>
+		
+			<div class="hour-card" id="h10">
+				<div class="time">9AM</div>
+    			<img src="images/cloud.png" alt="Weather Icon" class="weather-icon">
+				<div class="temperature">15°C</div>
+			</div>
+		
+			<div class="hour-card" id="h11">
+				<div class="time">10AM</div>
+    			<img src="images/cloud.png" alt="Weather Icon" class="weather-icon">
+				<div class="temperature">25°C</div>
+			</div>
+		
+			<div class="hour-card" id="h12">
+				<div class="time">11AM</div>
+    			<img src="images/cloud.png" alt="Weather Icon" class="weather-icon">
+				<div class="temperature">15°C</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		Powered by <a href="https://openweathermap.org/api/hourly-forecast" title="Free Weather API"> WeatherAPI.com</a>
+	</div>
+
+	<script src="/static/script.js"></script>
+	
+</body>
+
+</html>
